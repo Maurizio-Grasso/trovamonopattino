@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+}
+
+body {
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  padding:50px;
+  font-family: Helvetica;
+  color:white;
+}
+
+.wrapper { /* Il div contenitore che racchiude l'intero contenuto */
+  background-color: rgba(0, 0, 0, 0.3);
+  max-width:900px;
+  margin:auto;
+  border-radius:20px;
+  padding:50px;
+}
+
+/* Inizio Header  */
+
+header {
+  text-align: center;
+  color:#00dd00;
+  padding-bottom:20px;
+}
+
+header > img {
+  max-width:200px;
+}
+
+header h1 {
+  font-size: 35px;
+}
+
+/* Fine Header*/
+
+/* Inizio Nav */
+nav {
+  background-color: #00dd00;
+  text-align:center;
+  padding:10px;
+}
+
+/* Fine Nav */
+
+/* Inizio singole section (ovvero ogni singolo monopattino) */
+section {
+  margin-top:30px;
+}
+
+
+section h2 {
+  display:inline-block;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+section span  {
+  display:block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+section #indirizzo:before { /*Aggiungiamo la Freccetta...*/
+  content: "\2192 "
+}
+
+/* Fine Singole sezioni */
+
+/* Inizio istruzioni per la resa della batteria */
+
+section .batteria {
+  height:25px;
+  border-radius:5px;
+}
+
+#monopattino-1 .batteria {
+  width:30%;
+  background-color: orange;
+}
+
+#monopattino-2 .batteria {
+  width:50%;
+  background-color: green;
+}
+
+#monopattino-3 .batteria {
+  width:10%;
+  background-color: red;
+}
